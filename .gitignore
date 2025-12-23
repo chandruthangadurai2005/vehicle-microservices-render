@@ -1,0 +1,15 @@
+# Maven
+target/
+*.log
+
+# Node
+node_modules/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Secrets
+.env
