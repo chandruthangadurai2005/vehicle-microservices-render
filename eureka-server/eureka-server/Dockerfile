@@ -8,3 +8,5 @@ RUN mvn clean package -DskipTests
 
 EXPOSE 8761
 CMD ["java", "-jar", "target/*.jar"]
+
+
