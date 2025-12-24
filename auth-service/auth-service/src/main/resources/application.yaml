@@ -1,14 +1,14 @@
 server:
-  port: 8100
+  port: ${PORT:8100}
 
 spring:
   application:
     name: AUTH-SERVICE
 
   datasource:
-    url: jdbc:mysql://localhost:3306/authdb
-    username: root
-    password: Chandru@9626
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
 
   jpa:
     hibernate:
@@ -18,4 +18,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: ${EUREKA_URL}
